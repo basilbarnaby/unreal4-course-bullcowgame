@@ -1,0 +1,3 @@
+﻿  main.cpp
+c:\users\grafic\documents\unreal projects\course1\section_02\bullcowgame\main.cpp(62): warning C4715: 'AskToPlayAgain': not all control paths return a value
+  BullCowGame.vcxproj -> C:\Users\Grafic\Documents\Unreal Projects\Course1\Section_02\Debug\BullCowGame.exe
