@@ -12,10 +12,10 @@ bool AskToPlayAgain();
 int main()
 {
 	PrintIntro();
-	PlayGame();
-	if (AskToPlayAgain() == true) {
+	do {
+		cout << endl;
 		PlayGame();
-	}
+	} while (AskToPlayAgain());
 	return 0; //exit the application
 }
 
@@ -51,12 +51,8 @@ string GetGuess()
 
 bool AskToPlayAgain()
 {
-	cout << "Do you want to play again?";
+	cout << "Do you want to play again? (y/n)" << endl;
 	string Response = "";
 	getline(cin, Response);
-	if (Response[0] == 'y' || Response[0] == 'Y') {
-		return true;
-	}else if (Response[0] == 'n' || Response[0] == 'N'){
-		return false;
-	}
+	return (Response[0] == 'y' || Response[0] == 'Y');
 }
